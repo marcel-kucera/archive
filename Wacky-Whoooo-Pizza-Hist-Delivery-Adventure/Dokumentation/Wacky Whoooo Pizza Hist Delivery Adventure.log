@@ -1,0 +1,636 @@
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7445)  (format=lualatex 2020.6.17)  17 JUN 2020 20:51
+ restricted system commands enabled.
+**"Wacky Whoooo Pizza Hist Delivery Adventure.tex"
+("./Wacky Whoooo Pizza Hist Delivery Adventure.tex"
+LaTeX2e <2020-02-02> patch level 5
+Lua module: luaotfload-main 2020-05-06 3.14 luaotfload entry point
+Lua module: luaotfload-init 2020-05-06 3.14 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-05-01 2.71 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-05-01 2.71 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-05-06 3.14 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-05-06 3.14 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-05-06 3.14 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is "/home/marcel/.miktex/texmfs/data/lu
+atex-cache/generic-dev/names".
+luaotfload | init : Loading fontloader "fontloader-2020-05-06.lua" from kpse-res
+olved path "/home/marcel/.miktex/texmfs/install/tex/luatex/luaotfload/fontloader
+-2020-05-06.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
+Lua module: luaotfload-fallback 2020-05-06 3.14 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-05-06 3.14 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-05-06 3.14 luaotfload submodule / Script help
+ers
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-05-06 3.14 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-05-06 3.14 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-05-06 3.14 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-05-06 3.14 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 3
+Lua module: luaotfload-resolvers 2020-05-06 3.14 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is "/home/marcel/.miktex/texmfs/data/lu
+atex-cache/generic-dev/names".
+Lua module: luaotfload-features 2020-05-06 3.14 luaotfload submodule / features
+Lua module: luaotfload-harf-define 2020-05-06 3.14 luaotfload submodule / databa
+se
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Lua module: luaotfload-harf-plug 2020-05-06 3.14 luaotfload submodule / database
+Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'
+.
+Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
+Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
+Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
+Lua module: luaotfload-letterspace 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-suppress 2020-05-06 3.14 luaotfload submodule / suppress
+Lua module: luaotfload-szss 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-05-06 3.14 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-tounicode 2020-05-06 3.14 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-06-03>
+(/home/marcel/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/home/marcel/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/marcel/.miktex/texmfs/da
+ta/luatex-cache/generic-dev/names/luaotfload-names.luc)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+(/home/marcel/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2020/06/10 3.45 The Babel package
+
+(/home/marcel/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2020/06/10 3.45 Babel common definitions
+
+(/home/marcel/.miktex/texmfs/install/tex/generic/babel/luababel.def
+\bbl@readstream=\read2
+\babelcatcodetablenum=\catcodetable5
+\bbl@pattcodes=\catcodetable6
+)
+\babel@savecnt=\count171
+\U@D=\dimen135
+\l@babelnohyphens=\language1
+
+(/home/marcel/.miktex/texmfs/install/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+))
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/marcel/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of 
+babel
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/babel-german/german.ldf
+Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthography
+)
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/babel-german/germanb.ldf
+Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
+y)
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `German (trad. orthography)' into the format
+.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 58.
+
+Package babel Info: Making " an active character on input line 135.
+Package babel Info: No hyphenation patterns were set for
+(babel)             language 'german'. Reported on input line 231.
+))) (/home/marcel/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/home/marcel/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/home/marcel/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count172
+\Gm@cntv=\count173
+\c@Gm@tempcnt=\count174
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
+\Gm@dimlist=\toks16
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/marcel/.miktex/texmfs/install/tex/latex/fontspec/fontspec.sty
+(/home/marcel/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/marcel/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-06-03 L3 programming layer (loader) 
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count175
+\l__pdf_internal_box=\box45
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse-generic
+.tex
+\l__xparse_current_arg_int=\count176
+\g__xparse_grabber_int=\count177
+\l__xparse_m_args_int=\count178
+\l__xparse_v_nesting_int=\count179
+))
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX
+(/home/marcel/.miktex/texmfs/install/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count180
+\l__fontspec_language_int=\count181
+\l__fontspec_strnum_int=\count182
+\l__fontspec_tmp_int=\count183
+\l__fontspec_tmpa_int=\count184
+\l__fontspec_tmpb_int=\count185
+\l__fontspec_tmpc_int=\count186
+\l__fontspec_em_int=\count187
+\l__fontspec_emdef_int=\count188
+\l__fontspec_strong_int=\count189
+\l__fontspec_strongdef_int=\count190
+\l__fontspec_tmpa_dim=\dimen144
+\l__fontspec_tmpb_dim=\dimen145
+\l__fontspec_tmpc_dim=\dimen146
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/fontspec/fontspec.cfg)))
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count191
+\lst@gtempboxa=\box46
+\lst@token=\toks17
+\lst@length=\count192
+\lst@currlwidth=\dimen149
+\lst@column=\count193
+\lst@pos=\count194
+\lst@lostspace=\dimen150
+\lst@width=\dimen151
+\lst@newlines=\count195
+\lst@lineno=\count196
+\lst@maxwidth=\dimen152
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count197
+\lst@skipnumbers=\count198
+\lst@framebox=\box47
+)
+(/home/marcel/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks18
+\float@box=\box48
+\@float@everytoks=\toks19
+\@floatcapt=\box49
+)
+luaotfload | cache : Lookup cache loaded from /home/marcel/.miktex/texmfs/data/l
+uatex-cache/generic-dev/names/luaotfload-lookup-cache.luc.
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'LiberationSans(0)' created for font
+(fontspec)             'Liberation Sans' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"LiberationSans:mode=node;script=latn;language=dflt;+t
+lig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"LiberationSans/B:mode=node;script=latn;language=dflt;
++tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"LiberationSans/I:mode=node;script=latn;language=dflt;
++tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"LiberationSans/BI:mode=node;script=latn;language=dflt
+;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+("./Wacky Whoooo Pizza Hist Delivery Adventure.aux"
+Package babel Info: No hyphenation patterns were set for
+(babel)             language 'german'. Reported on input line 5.
+)
+\openout1 = Wacky Whoooo Pizza Hist Delivery Adventure.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 17
+.
+
+(/home/marcel/.miktex/texmfs/install/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package babel Info: No hyphenation patterns were set for
+(babel)             language 'german'. Reported on input line 17.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 17.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 17.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 17.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 17.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 17.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 17.
+LaTeX Font Info:    Redeclaring math accent \check on input line 17.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 17.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/LiberationSans(0)/m/n on input line 1
+7.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/LiberationSans(0)/m/n on input line 
+17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/LiberationSans(0)/m/n --> TU/LiberationSans(0)/m/n on
+ input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/LiberationSans(0)/m/it on input line
+ 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/LiberationSans(0)/b/n on input line 
+17.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/LiberationSans(0)/m/n --> TU/LiberationSans(0)/b/n on
+ input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/LiberationSans(0)/b/it on input lin
+e 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 17.
+(/home/marcel/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count266
+\scratchdimen=\dimen153
+\scratchbox=\box50
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen154
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks21
+) (/home/marcel/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
+5.
+)
+\c@lstlisting=\count272
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+ [1
+
+{/home/marcel/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+("./Wacky Whoooo Pizza Hist Delivery Adventure.toc"
+Package babel Info: No hyphenation patterns were set for
+(babel)             language 'german'. Reported on input line 1.
+)
+\tf@toc=\write3
+
+\openout3 = Wacky Whoooo Pizza Hist Delivery Adventure.toc
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Overfull \hbox (14.28906pt too wide) in paragraph at lines 62--68
+\TU/LiberationSans(0)/m/n/10 Der Spieler ist damit beauftragt Pizzen an bestimmt
+e Orte auszuliefern. Jedoch wird er währenddessen
+ []
+
+
+Overfull \hbox (17.47102pt too wide) in paragraph at lines 62--68
+\TU/LiberationSans(0)/m/n/10 von feindlichen Kugelfischen verfolgt, welche versu
+chen, ihn an seiner Mission, die Pizzen auszuliefern,
+ []
+
+[1]
+<./images/start.png, id=13, 824.82065pt x 515.4201pt>
+File: ./images/start.png Graphic file (type png)
+<use ./images/start.png>
+Package luatex.def Info: ./images/start.png  used on input line 73.
+(luatex.def)             Requested size: 430.00462pt x 268.70422pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+<./images/ingame.png, id=14, 824.82065pt x 515.4201pt>
+File: ./images/ingame.png Graphic file (type png)
+<use ./images/ingame.png>
+Package luatex.def Info: ./images/ingame.png  used on input line 83.
+(luatex.def)             Requested size: 430.00462pt x 268.70422pt.
+[2<./images/start.png>]
+<./images/end.png, id=19, 824.82065pt x 515.4201pt>
+File: ./images/end.png Graphic file (type png)
+<use ./images/end.png>
+Package luatex.def Info: ./images/end.png  used on input line 100.
+(luatex.def)             Requested size: 430.00462pt x 268.70422pt.
+ [3<./images/ingame.png>] [4<./images/end.png>]
+<./images/klassendiagramm1.jpg, id=28, 542.025pt x 792.9625pt>
+File: ./images/klassendiagramm1.jpg Graphic file (type jpg)
+<use ./images/klassendiagramm1.jpg>
+Package luatex.def Info: ./images/klassendiagramm1.jpg  used on input line 133.
+(luatex.def)             Requested size: 293.92973pt x 430.00462pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+[5] [6<./images/klassendiagramm1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+<./images/klassendiagramm2.png, id=35, 311.1625pt x 220.825pt>
+File: ./images/klassendiagramm2.png Graphic file (type png)
+<use ./images/klassendiagramm2.png>
+Package luatex.def Info: ./images/klassendiagramm2.png  used on input line 142.
+(luatex.def)             Requested size: 199.16928pt x 141.34772pt.
+
+Overfull \hbox (6.1901pt too wide) in paragraph at lines 144--145
+\TU/LiberationSans(0)/m/n/10 Verschiedenen Preise der Upgrades dar. Diese Klasse
+ enthält Methoden, um die Benutzeroberfläche
+ []
+
+<./images/chase.png, id=36, 288.29446pt x 205.69154pt>
+File: ./images/chase.png Graphic file (type png)
+<use ./images/chase.png>
+Package luatex.def Info: ./images/chase.png  used on input line 149.
+(luatex.def)             Requested size: 199.16928pt x 142.1062pt.
+[7<./images/klassendiagramm2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+<./images/direct.png, id=41, 345.63913pt x 123.89143pt>
+File: ./images/direct.png Graphic file (type png)
+<use ./images/direct.png>
+Package luatex.def Info: ./images/direct.png  used on input line 154.
+(luatex.def)             Requested size: 199.16928pt x 71.39201pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+<./images/nav.png, id=42, 553.02261pt x 298.6101pt>
+File: ./images/nav.png Graphic file (type png)
+<use ./images/nav.png>
+Package luatex.def Info: ./images/nav.png  used on input line 159.
+(luatex.def)             Requested size: 341.43306pt x 184.36632pt.
+[8<./images/chase.png><./images/direct.png>]
+Overfull \hbox (40.4414pt too wide) in paragraph at lines 166--167
+\TU/LiberationSans(0)/m/n/10 Dies ist die gesamte Player-Klasse, welche die Logi
+k für Eingaben, Missionen, Score und Benutzeroberfäche
+ []
+
+[9<./images/nav.png>] [10] [11] [12]
+<./images/start2.png, id=60, 1508.24348pt x 829.11957pt>
+File: ./images/start2.png Graphic file (type png)
+<use ./images/start2.png>
+Package luatex.def Info: ./images/start2.png  used on input line 293.
+(luatex.def)             Requested size: 344.005pt x 189.09941pt.
+<./images/spielbeginn.png, id=61, 1508.24348pt x 829.11957pt>
+File: ./images/spielbeginn.png Graphic file (type png)
+<use ./images/spielbeginn.png>
+Package luatex.def Info: ./images/spielbeginn.png  used on input line 299.
+(luatex.def)             Requested size: 344.005pt x 189.09941pt.
+<./images/ingame2.png, id=62, 1019.63544pt x 567.83571pt>
+File: ./images/ingame2.png Graphic file (type png)
+<use ./images/ingame2.png>
+Package luatex.def Info: ./images/ingame2.png  used on input line 305.
+(luatex.def)             Requested size: 344.005pt x 191.57129pt.
+<./images/pause.png, id=63, 1019.63544pt x 567.83571pt>
+File: ./images/pause.png Graphic file (type png)
+<use ./images/pause.png>
+Package luatex.def Info: ./images/pause.png  used on input line 311.
+(luatex.def)             Requested size: 344.005pt x 191.57129pt.
+ [13<./images/start2.png><./images/spielbeginn.png>]
+<./images/upgrade.png, id=67, 1539.66522pt x 860.8866pt>
+File: ./images/upgrade.png Graphic file (type png)
+<use ./images/upgrade.png>
+Package luatex.def Info: ./images/upgrade.png  used on input line 317.
+(luatex.def)             Requested size: 344.005pt x 192.3381pt.
+<./images/lategame.png, id=68, 1539.66522pt x 860.8866pt>
+File: ./images/lategame.png Graphic file (type png)
+<use ./images/lategame.png>
+Package luatex.def Info: ./images/lategame.png  used on input line 323.
+(luatex.def)             Requested size: 344.005pt x 192.3381pt.
+ [14<./images/ingame2.png><./images/pause.png>]
+<./images/lose.png, id=74, 1019.63544pt x 567.83571pt>
+File: ./images/lose.png Graphic file (type png)
+<use ./images/lose.png>
+Package luatex.def Info: ./images/lose.png  used on input line 329.
+(luatex.def)             Requested size: 344.005pt x 191.57129pt.
+ [15<./images/upgrade.png><./images/lategame.png>] [16<./images/lose.png>]
+("./Wacky Whoooo Pizza Hist Delivery Adventure.aux"
+Package babel Info: No hyphenation patterns were set for
+(babel)             language 'german'. Reported on input line 5.
+))
+
+Here is how much of LuaTeX's memory you used:
+ 6928 strings out of 480899
+ 100000,552014 words of node,token memory allocated
+ 415 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 49 glue_spec,
+ 4 attribute_list, 1 write nodes
+   avail lists: 2:461,3:304,4:6,5:71,6:44,7:2635,8:2,9:199,10:5,11:7
+ 24257 multiletter control sequences out of 65536+200000
+ 57 fonts using 6351579 bytes
+ 44i,11n,73p,1269b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/marcel/.miktex/texmfs/install/fonts/opentype/public/lm/lmmono10-regular.o
+tf></usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf></usr/share/fon
+ts/truetype/liberation/LiberationSans-Regular.ttf>
+Output written on Wacky Whoooo Pizza Hist Delivery Adventure.pdf (18 pages, 100
+5355 bytes).
+
+PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

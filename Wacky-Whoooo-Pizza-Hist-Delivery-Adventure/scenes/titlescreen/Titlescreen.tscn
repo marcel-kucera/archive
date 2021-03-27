@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ui_elements/font/Title_Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui_elements/MenuBG.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/titlescreen/tilescreen_graphic.png" type="Texture" id=3]
+[ext_resource path="res://scenes/titlescreen/Titlescreen.gd" type="Script" id=4]
+[ext_resource path="res://ui_elements/font/Menu_Font.tres" type="DynamicFont" id=5]
+[ext_resource path="res://ui_elements/Button_Style.tres" type="StyleBox" id=6]
+[ext_resource path="res://ui_elements/BG_Panel.tres" type="StyleBox" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" type="MarginContainer" parent="PanelContainer"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+custom_constants/margin_right = 50
+custom_constants/margin_top = 50
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Main"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 1870.0
+margin_bottom = 1030.0
+custom_constants/separation = 50
+
+[node name="Title" type="Label" parent="PanelContainer/Main/VBoxContainer"]
+margin_right = 1820.0
+margin_bottom = 110.0
+custom_fonts/font = ExtResource( 1 )
+text = "Wacky Whoooo Pizza Hist Delivery Adventure"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/Main/VBoxContainer"]
+margin_top = 160.0
+margin_right = 1820.0
+margin_bottom = 980.0
+size_flags_vertical = 3
+custom_constants/separation = 50
+
+[node name="MenuBG" parent="PanelContainer/Main/VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG"]
+margin_right = 995.0
+margin_bottom = 820.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 970.0
+margin_bottom = 795.0
+custom_constants/separation = 25
+
+[node name="Start" type="Button" parent="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG/MarginContainer/VBoxContainer"]
+margin_right = 945.0
+margin_bottom = 372.0
+size_flags_vertical = 3
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 5 )
+text = "Start"
+
+[node name="Beenden" type="Button" parent="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG/MarginContainer/VBoxContainer"]
+margin_top = 397.0
+margin_right = 945.0
+margin_bottom = 770.0
+size_flags_vertical = 3
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 5 )
+text = "Beenden"
+
+[node name="Image" type="CenterContainer" parent="PanelContainer/Main/VBoxContainer/HBoxContainer"]
+margin_left = 1045.0
+margin_right = 1820.0
+margin_bottom = 820.0
+
+[node name="Image" type="TextureRect" parent="PanelContainer/Main/VBoxContainer/HBoxContainer/Image"]
+margin_top = 106.0
+margin_right = 775.0
+margin_bottom = 713.0
+texture = ExtResource( 3 )
+[connection signal="pressed" from="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG/MarginContainer/VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="PanelContainer/Main/VBoxContainer/HBoxContainer/MenuBG/MarginContainer/VBoxContainer/Beenden" to="." method="_on_Beenden_pressed"]

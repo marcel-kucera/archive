@@ -1,0 +1,21 @@
+version: "3"
+services:
+  api:
+    build: ../server
+    ports:
+      - 4243:3000
+    environment:
+      - SERVER=http://opentsdb:4242
+      - PASSWORD=1234
+  opentsdb:
+    image: petergrace/opentsdb-docker
+    environment:
+      - WAITSECS=30
+    volumes:
+      - "./opentsdb:/data/hbase"
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana:/vol01/Docker/monitoring

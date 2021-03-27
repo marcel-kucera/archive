@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://actors/spawner/Spawner.gd" type="Script" id=1]
+[ext_resource path="res://actors/spawner/spawnerdebug.png" type="Texture" id=2]
+[ext_resource path="res://actors/enemy/Enemy.tscn" type="PackedScene" id=3]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource( 1 )
+est_cooldown = 5000
+cooldown_range = 2000
+spawn_range = 2500
+enemy = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -7.62939e-06, 7.62939e-06 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]

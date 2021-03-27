@@ -1,0 +1,18 @@
+UNO
+0. create gamestate and draw a discard card
+1. wait until 2 players are connected
+2. create 2 player objects and populate the with sockets and cards
+3. begin the game
+4. send gamestate to clients with opponent cards anonymized
+5. player 1 clicks on a fitting card to place on discard
+6. card is placed on discard and clients are updated
+
+probably needs an update function
+
+---done---
+
+---TODO---
+take card if player cant place
+autorestart game
+more players
+effect cards

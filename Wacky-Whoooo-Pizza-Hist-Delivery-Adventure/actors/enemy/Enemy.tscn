@@ -1,0 +1,146 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://actors/enemy/enemy - arm.png" type="Texture" id=1]
+[ext_resource path="res://actors/enemy/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://ui_elements/HP_Bar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/enemy/enemy - body.png" type="Texture" id=4]
+[ext_resource path="res://actors/enemy/enemy - leg.png" type="Texture" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 26.8796
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.0313726, 1, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.231373, 0.258824, 0.321569, 1 )
+
+[sub_resource type="Animation" id=3]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "walk"
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("enemy - body/Node2D/Enemy - LegL:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 53.304, -32.0258 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("enemy - body/Node2D/Enemy - LegR:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -44.3767, 31.9093 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("enemy - body/Node2D/Enemy - ArmR:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 13.7495, -17.8225 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("enemy - body/Node2D/Enemy - ArmL:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 13.7495, -17.8225 ]
+}
+
+[node name="Enemy" type="KinematicBody2D" groups=[
+"enemy",
+]]
+script = ExtResource( 2 )
+max_hp = 120
+speed = 600
+contact_damage = 1
+kill_score = 100
+
+[node name="enemy - body" type="Sprite" parent="."]
+position = Vector2( 1, -2 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Node2D" type="Node2D" parent="enemy - body"]
+show_behind_parent = true
+
+[node name="Enemy - ArmL" type="Sprite" parent="enemy - body/Node2D"]
+position = Vector2( -85, -55 )
+rotation = 0.0997874
+texture = ExtResource( 1 )
+offset = Vector2( -35, -30 )
+
+[node name="Enemy - LegR" type="Sprite" parent="enemy - body/Node2D"]
+position = Vector2( 39.6441, 124.197 )
+rotation = -0.435791
+texture = ExtResource( 5 )
+offset = Vector2( 0.0472984, 24.5772 )
+
+[node name="Enemy - LegL" type="Sprite" parent="enemy - body/Node2D"]
+position = Vector2( -48.7557, 126.176 )
+rotation = 0.551446
+texture = ExtResource( 5 )
+offset = Vector2( 0.40493, 24.1019 )
+
+[node name="Enemy - ArmR" type="Sprite" parent="enemy - body/Node2D"]
+position = Vector2( 95, -45 )
+rotation = 0.0997874
+texture = ExtResource( 1 )
+offset = Vector2( 35, -30 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+scale = Vector2( 1.12, 1.12 )
+shape = SubResource( 1 )
+
+[node name="HP_Bar" parent="." instance=ExtResource( 3 )]
+margin_left = -30.0
+margin_top = 35.0
+margin_right = 30.0
+rect_pivot_offset = Vector2( 30, 7 )
+custom_styles/fg = SubResource( 2 )
+min_value = -1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/die = SubResource( 3 )
+anims/walk = SubResource( 4 )
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
