@@ -1,0 +1,26 @@
+#Plasma
+phonon-qt5-vlc xorg-server plasma sddm
+
+#Plasma Addons
+sddm-kcm kde-gtk-config print-manager kwalletmanager baloo kdeconnect
+
+#Fonts
+ttf-dejavu ttf-liberation noto-fonts-emoji otf-ipafont
+
+#KDE Apps
+konsole ark dolphin gwenview kwrite okular spectacle
+
+#General
+firefox
+
+#Misc
+samba powerdevil bash-completion xdg-user-dirs ntfs-3g
+
+#Tools
+base-devel git openssh sshfs neofetch sudo rsync
+
+#Printing
+cups ghostscript gsfonts foomatic-db-engine foomatic-db foomatic-db-nonfree gutenprint foomatic-db-gutenprint-ppds
+
+#Multimedia
+pulseaudio vlc plasma-pa

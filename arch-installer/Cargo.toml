@@ -1,0 +1,12 @@
+[package]
+name = "arch-installer"
+version = "0.1.0"
+authors = ["Marcel Kucera <marcelkucera@gmx.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rpassword = "5.0"
+yaml-rust = "0.4.5"
+linked-hash-map = "0.5.4"

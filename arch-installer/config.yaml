@@ -1,0 +1,38 @@
+encrypt: false
+lvm:
+  #Partitions are mounted in order! Root should be first
+  root:
+    mount: "/"
+    size: 50
+    keep_on_reinstall: false
+  home:
+    mount: "/home"
+    size: 50
+    keep_on_reinstall: true
+packages: "packages.txt"
+timezone: "Europe/Berlin"
+locale:
+  - "en_US.UTF-8 UTF-8"
+  - "de_DE.UTF-8 UTF-8"
+lang: "en_US.UTF-8"
+keymap: "de-latin1-nodeadkeys"
+hostname: "installer-test"
+username: "user"
+postinstall_cmds:
+  - "echo hi"
+postinstall_chroot_cmds:
+  #Display Manager
+  - "systemctl enable sddm"
+configmaps:
+  - path: "/etc/X11/xorg.conf.d/01-keyboard.conf"
+    content: |
+      Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "de"
+        Option "XkbModel" "pc104"
+        Option "XkbVariant" ",nodeadkeys"
+        Option "XkbOptions" ""
+      EndSection
+  - path: "/etc/sudoers.d/10-user"
+    content: "user ALL=(ALL) NOPASSWD: ALL"
