@@ -1,0 +1,14 @@
+{
+  "name": "wasMK2Redux",
+  "displayName": "wasMK2Redux",
+  "icon": "",
+  "expo": {
+    "name": "wasMK2Redux",
+    "slug": "wasMK2Redux",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "de.nauvis.wasmk2redux"
+    }
+  }
+}

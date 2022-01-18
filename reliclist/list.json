@@ -1,0 +1,46 @@
+{
+    "lith": [
+        {"id":"B4","amount":0},
+        {"id":"C7","amount":0},
+        {"id":"C9","amount":0},
+        {"id":"G4","amount":0},
+        {"id":"H3","amount":0},
+        {"id":"N10","amount":0},
+        {"id":"S11","amount":0},
+        {"id":"T8","amount":0},
+        {"id":"T9","amount":0}
+    ],
+    "meso": [
+        {"id":"A3","amount":0},
+        {"id":"G3","amount":0},
+        {"id":"I2","amount":0},
+        {"id":"N11","amount":0},
+        {"id":"N6","amount":0},
+        {"id":"P4","amount":0},
+        {"id":"P5","amount":0},
+        {"id":"S11","amount":0},
+        {"id":"Z4","amount":0}
+    ],
+    "neo": [
+        {"id":"K4","amount":0},
+        {"id":"N16","amount":0},
+        {"id":"N17","amount":0},
+        {"id":"N18","amount":0},
+        {"id":"P3","amount":0},
+        {"id":"R1","amount":0},
+        {"id":"V10","amount":0},
+        {"id":"V9","amount":0}
+    ],
+    "axi": [
+        {"id":"C7","amount":0},
+        {"id":"K6","amount":0},
+        {"id":"M2","amount":0},
+        {"id":"O5","amount":0},
+        {"id":"P4","amount":0},
+        {"id":"S3","amount":0},
+        {"id":"S8","amount":0},
+        {"id":"S9","amount":0},
+        {"id":"T8","amount":0},
+        {"id":"V10","amount":0}
+    ]
+}
