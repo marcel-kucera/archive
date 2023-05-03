@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS user(
+    id TEXT NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    password TEXT NOT NULL,
+    admin BOOLEAN NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS fileOwnerInfo(
+    fileKey TEXT NOT NULL PRIMARY KEY,
+    fileName TEXT NOT NULL,
+    userId TEXT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES user(id)
+);
+
+CREATE TABLE IF NOT EXISTS authToken(
+    token TEXT NOT NULL PRIMARY KEY,
+    userId TEXT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES user(id)
+);

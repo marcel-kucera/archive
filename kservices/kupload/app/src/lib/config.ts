@@ -1,0 +1,5 @@
+export const API_URL = "http://localhost:3000/"
+export const LOGIN_URL = API_URL + "login"
+export const USERDATA_URL = API_URL + "userinfo"
+export const UPLOAD_URL = API_URL + "upload"
+export const DOWNLOAD_URL = API_URL + "download"
