@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <style>
+      .fragment.underline {
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0);
+      }
+      .fragment.underline.visible {
+        text-decoration-color: white !important;
+      }
+      .fragment.select {
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0);
+      }
+      .fragment.select.current-fragment {
+        text-decoration-color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Fallstudie 6: Bauunternehmen</h2>
+          <span style="font-size: 11pt">Nils, Jan, Marcel</span>
+        </section>
+        <section>
+          <div style="display: flex">
+            <div style="margin: auto">
+              <h3>Entitäten</h3>
+              <ul>
+                <li class="fragment custom select" data-fragment-index="1">
+                  <span class="fragment custom select" data-fragment-index="3">
+                    <span
+                      class="fragment custom select"
+                      data-fragment-index="2"
+                    >
+                      <span
+                        class="fragment custom select"
+                        data-fragment-index="4"
+                      >
+                        Teilprojekte
+                      </span>
+                    </span>
+                  </span>
+                </li>
+                <li class="fragment custom select" data-fragment-index="1">
+                  <span class="fragment custom select" data-fragment-index="4">
+                    Mitarbeiter
+                  </span>
+                </li>
+                <li class="fragment custom select" data-fragment-index="2">
+                  <span class="fragment custom select" data-fragment-index="3">
+                    Material
+                  </span>
+                </li>
+                <li class="fragment custom select" data-fragment-index="3">
+                  Lieferant
+                </li>
+                <li class="fragment custom select" data-fragment-index="4">
+                  Unfall
+                </li>
+              </ul>
+            </div>
+            <div style="margin: auto">
+              <h3>Beziehungen</h3>
+              <ul>
+                <li class="fragment custom select" data-fragment-index="1">
+                  Arbeitet bei
+                </li>
+                <li class="fragment custom select" data-fragment-index="1">
+                  Arbeitstag
+                </li>
+                <li class="fragment custom select" data-fragment-index="2">
+                  Bedarf
+                </li>
+                <li class="fragment custom select" data-fragment-index="3">
+                  Lieferung
+                </li>
+                <li class="fragment custom select" data-fragment-index="4">
+                  Involviert
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>Projekt,Mitarbeiter > Arbeitet bei, Arbeitstag</li>
+              <li>Projekt,Material > Bedarf</li>
+              <li>Projekt,Material,Lieferant > Lieferung</li>
+              <li>Projekt,Mitarbeiter,Unfall > Involviert</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <div class="r-stack r-stretch">
+            <img src="serm.png" />
+            <img class="fragment" src="serm_border.png" />
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>Erweiterung um Ausbildungsgänge</li>
+              <li>Viele E- und R-Typen</li>
+              <li>Nur 2 ER Typen</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Teilprojekt</h2>
+          <ul>
+            <li class="fragment">
+              <span class="fragment custom underline">PNr</span>
+            </li>
+            <li class="fragment">Name</li>
+            <li class="fragment">Arbeitsstundeneinschätzung</li>
+            <li class="fragment">Budget</li>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <div style="display: flex">
+            <div style="margin: auto">
+              <h2>Mitarbeiter</h2>
+              <ul>
+                <li style="text-decoration: underline">MNr</li>
+                <li>Name</li>
+                <li>Wochenarbeitsstunden</li>
+                <li>Adresse</li>
+                <li>Position</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            Stadt <br />
+            PLZ <br />
+            Straße <br />
+            Hausnummer <br />
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <div style="display: flex">
+            <div style="margin: auto">
+              <h2>Mitarbeiter</h2>
+              <ul>
+                <li style="text-decoration: underline">MNr</li>
+                <li>Name</li>
+                <li>Wochenarbeitsstunden</li>
+                <li>Adresse</li>
+                <li>Position</li>
+              </ul>
+            </div>
+            <div
+              style="
+                margin: auto;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <h2 style="margin-bottom: 0px">Position</h2>
+              <span style="!important;">(Enum)</span>
+              <ul>
+                <li>Supervisor</li>
+                <li>Arbeiter</li>
+                <li>Wachposten</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Arbeitstag</h2>
+          <ul>
+            <li style="text-decoration: underline">AtNR</li>
+            <li>#PNr</li>
+            <li>#MNr</li>
+            <li>Stunden</li>
+            <li>Datum</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Wann ist das Projekt fertig?</h2>
+        </section>
+        <section>
+          <pre class="r-stretch">
+            <code style="font-size: 1em; line-height: 1em">
+select round((
+  select sum(verbleibend)
+  from
+  (
+    select
+    pnr, arbeitsstundenschätzung - arbeitsstunden as verbleibend
+    from projekt
+    join
+    (
+      select pnr, sum(stunden) as arbeitsstunden 
+      from arbeitstag 
+      group by pnr
+    ) c
+    using (pnr)
+  ) a
+)
+/
+(
+  select avg(wochenstunden) as avg
+  from
+  (
+    select sum(stunden) as wochenstunden
+    from arbeitstag
+    group by date_part('week',tag),date_part('year',tag)
+  ) b
+),2) as verbleibende_wochen;
+            </code>
+            </pre>
+        </section>
+        <section>
+          <section>
+            <h2>Views!</h2>
+            <blockquote>
+              ...eine virtuelle Tabelle ohne eigene Datensätze
+            </blockquote>
+          </section>
+          <section>
+            <h2>Gearbeitete Wochenstunden</h2>
+            <pre>
+            <code>
+CREATE OR REPLACE VIEW wochenstunden AS
+SELECT
+SUM(stunden) AS wochenstunden
+FROM arbeitstag
+GROUP BY date_part('week',tag),date_part('year',tag)
+            </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Stunden pro Projekt</h2>
+            <pre>
+            <code>
+CREATE OR REPLACE VIEW projektarbeitsstunden AS
+SELECT pnr, sum(stunden) AS arbeitsstunden
+FROM arbeitstag GROUP BY pnr;
+            </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Verbleibende Studen</h2>
+            <pre>
+            <code>
+CREATE OR REPLACE VIEW verbleibend AS
+SELECT
+SUM(arbeitsstundenschätzung - arbeitsstunden) as verbleibend, pnr  
+FROM projekt
+JOIN projektarbeitsstunden USING (pnr)
+GROUP BY pnr
+            </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Wochen bis Fertigstellung</h2>
+            <pre>
+            <code>
+SELECT ROUND(
+(SELECT SUM(verbleibend) FROM verbleibend)
+/
+(SELECT avg(wochenstunden) FROM wochenstunden)
+,2)
+            </code>
+            </pre>
+          </section>
+        </section>
+        <section>
+          <h3>Arbeitet bei</h3>
+          <ul>
+            <li style="text-decoration: underline">PNr</li>
+            <li style="text-decoration: underline">MNr</li>
+          </ul>
+          <p style="margin-top: 1em" class="fragment">
+            Projekt MUSS einen Supervisor haben
+          </p>
+          <aside class="notes">
+            Infos zu Vererbung: Postgres Dokumentation 5.10.1
+          </aside>
+        </section>
+        <section>
+          <h3>Supervisor Trigger</h3>
+          <pre
+            class="r-stretch"
+          ><code style="font-size:0.69em; line-height:1.3em">
+CREATE OR REPLACE FUNCTION require_supervisor() RETURNS TRIGGER 
+LANGUAGE plpgsql AS $$ DECLARE
+is_supervisor bool;
+project_has_supervisor bool;
+BEGIN
+    SELECT position = 'supervisor' INTO is_supervisor
+    FROM mitarbeiter
+    WHERE mnr = NEW.mnr;
+
+    IF is_supervisor THEN
+	    RETURN NEW;
+    END IF;
+    
+    SELECT count(*)>0 INTO project_has_supervisor
+	  FROM arbeitetbei
+	  JOIN mitarbeiter USING (mnr)
+ 	  WHERE position = 'supervisor'
+	  AND pnr = NEW.pnr;
+
+    IF NOT project_has_supervisor
+    THEN
+        RAISE EXCEPTION 'Ein Projekt muss einen Supervisor haben';
+    END IF;
+    RETURN NEW;
+END;
+$$ ;
+          </code></pre>
+        </section>
+        <section>
+          <h2>Vielen Dank für eure Aufmerksamkeit</h2>
+          <h4 style="padding-top: 1em">Gibt es Fragen?</h4>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        navigationMode: "linear",
+        progress: false,
+        // Learn about plugins: https://revealjs.com/plugins/
+        slideNumber: true,
+        plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
